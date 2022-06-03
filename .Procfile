@@ -1,1 +1,1 @@
-web: npm run start
+web: npm --experimental-json-modules run start
