@@ -20,7 +20,10 @@ app.use(
 app.use('/posts', postRoutes);
 app.use('/login', loginRoutes);
 
-const CONNECTION_URL = 'mongodb://localhost:27017';
+app.get('/', (req, res) => {
+  res.send('FORUCLA IS UP AND RUNNING...');
+});
+const CONNECTION_URL = 'mongodb+srv://oongaboonga:ucla-forum@cluster0.6r2q2co.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.port || 4000;
 
 mongoose
